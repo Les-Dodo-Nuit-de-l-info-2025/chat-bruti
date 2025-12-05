@@ -53,6 +53,7 @@
     build: {
       target: 'esnext',
       outDir: 'build',
+      assetsDir: 'assets'
     },
     server: {
       port: 3000,

@@ -1,0 +1,183 @@
+/* ModesPanel Styles - French Government Theme */
+
+.modes-panel-container {
+  background-color: #ffffff;
+  border-radius: 4px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  border: 1px solid #e5e5e5;
+}
+
+/* Modes Section */
+.modes-panel-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.modes-panel-section-title {
+  color: #000091;
+  margin-bottom: 0.75rem;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  font-family: 'Marianne', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+}
+
+.modes-panel-modes-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+/* Divider */
+.modes-panel-divider {
+  border-top: 1px solid #e5e5e5;
+}
+
+/* Suggested Questions */
+.modes-panel-questions-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.modes-panel-question-button {
+  padding: 0.5rem 0.75rem;
+  background-color: #f6f6f6;
+  color: #3a3a3a;
+  border: 1px solid #e5e5e5;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 0.875rem;
+  font-weight: 600;
+  font-family: 'Marianne', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+}
+
+.modes-panel-question-button:hover {
+  background-color: #e8edff;
+  color: #000091;
+  border-color: #000091;
+}
+
+/* Fun Stats */
+.modes-panel-stats {
+  background-color: #fff4e6;
+  border-radius: 4px;
+  padding: 1rem;
+  border: 1px solid #ffd6a5;
+}
+
+.modes-panel-stats-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.modes-panel-trophy-icon {
+  width: 1.25rem;
+  height: 1.25rem;
+  color: #d97706;
+}
+
+.modes-panel-stats-title {
+  color: #3a3a3a;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  font-family: 'Marianne', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+}
+
+.modes-panel-stats-quote {
+  color: #3a3a3a;
+  font-style: italic;
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+  font-size: 0.9375rem;
+  font-family: 'Marianne', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+}
+
+.modes-panel-stats-cite {
+  color: #666666;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-family: 'Marianne', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .modes-panel-container {
+    padding: 1.25rem;
+    border-radius: 4px;
+  }
+  
+  .modes-panel-section-title {
+    font-size: 0.875rem;
+    margin-bottom: 0.625rem;
+  }
+  
+  .modes-panel-question-button {
+    padding: 0.375rem 0.625rem;
+    font-size: 0.8125rem;
+  }
+  
+  .modes-panel-stats {
+    padding: 0.875rem;
+  }
+  
+  .modes-panel-stats-title {
+    font-size: 0.875rem;
+  }
+  
+  .modes-panel-stats-quote {
+    font-size: 0.875rem;
+  }
+  
+  .modes-panel-stats-cite {
+    font-size: 0.8125rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .modes-panel-container {
+    padding: 1rem;
+    border-radius: 4px;
+    gap: 1.25rem;
+  }
+  
+  .modes-panel-section-title {
+    font-size: 0.8125rem;
+  }
+  
+  .modes-panel-questions-wrapper {
+    gap: 0.375rem;
+  }
+  
+  .modes-panel-question-button {
+    padding: 0.375rem 0.5rem;
+    font-size: 0.75rem;
+  }
+  
+  .modes-panel-stats {
+    padding: 0.75rem;
+  }
+  
+  .modes-panel-trophy-icon {
+    width: 1.125rem;
+    height: 1.125rem;
+  }
+  
+  .modes-panel-stats-title {
+    font-size: 0.8125rem;
+  }
+  
+  .modes-panel-stats-quote {
+    font-size: 0.8125rem;
+  }
+  
+  .modes-panel-stats-cite {
+    font-size: 0.75rem;
+  }
+}

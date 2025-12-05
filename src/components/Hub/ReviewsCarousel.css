@@ -1,0 +1,67 @@
+/* ReviewsCarousel Styles - Government Professional Theme */
+
+.reviews-carousel {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+/* Swiper navigation buttons customization */
+.reviews-carousel :global(.swiper-button-next),
+.reviews-carousel :global(.swiper-button-prev) {
+  color: #000091;
+  background: #ffffff;
+  width: 2.5rem;
+  height: 2.5rem;
+  transition: all 0.2s ease;
+  border: 1px solid #e5e5e5;
+}
+
+.reviews-carousel :global(.swiper-button-next):hover,
+.reviews-carousel :global(.swiper-button-prev):hover {
+  background: #e8edff;
+  color: #000091;
+  transform: scale(1.05);
+}
+
+.reviews-carousel :global(.swiper-button-next)::after,
+.reviews-carousel :global(.swiper-button-prev)::after {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.reviews-carousel :global(.swiper-button-disabled) {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+/* Responsive styles */
+@media (max-width: 640px) {
+  .reviews-carousel {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+  
+  .reviews-carousel :global(.swiper-button-next),
+  .reviews-carousel :global(.swiper-button-prev) {
+    width: 2rem;
+    height: 2rem;
+  }
+  
+  .reviews-carousel :global(.swiper-button-next)::after,
+  .reviews-carousel :global(.swiper-button-prev)::after {
+    font-size: 0.875rem;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+  .reviews-carousel :global(.swiper-button-next),
+  .reviews-carousel :global(.swiper-button-prev) {
+    width: 2.25rem;
+    height: 2.25rem;
+  }
+  
+  .reviews-carousel :global(.swiper-button-next)::after,
+  .reviews-carousel :global(.swiper-button-prev)::after {
+    font-size: 0.9375rem;
+  }
+}

@@ -1,0 +1,84 @@
+/* CallPage Styles - French Government Theme */
+
+.call-page-container {
+  min-height: 100vh;
+  background-color: #f6f6f6;
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-panel {
+  flex: 1;
+  overflow-y: auto;
+  min-height: 0;
+}
+
+/* Main Content */
+.call-page-main {
+  flex: 1;
+  padding: 1.5rem;
+  display: flex;
+  gap: 1.5rem;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  min-height: 0;
+}
+
+/* Left Column - Bot Profile */
+.call-page-left-column {
+  width: 360px;
+  flex-shrink: 0;
+}
+
+/* Center Column - Chat & Input */
+.call-page-center-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  border-radius: 4px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  min-height: 500px;
+  max-height: calc(100vh - 120px);
+  border: 1px solid #e5e5e5;
+}
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+  .call-page-main {
+    flex-direction: column;
+    padding: 1rem;
+  }
+  
+  .call-page-left-column {
+    width: 100%;
+  }
+  
+  .call-page-center-column {
+    min-height: 400px;
+  }
+}
+
+@media (max-width: 768px) {
+  .call-page-main {
+    gap: 1rem;
+  }
+  
+  .call-page-center-column {
+    border-radius: 4px;
+    min-height: 350px;
+  }
+}
+
+@media (max-width: 640px) {
+  .call-page-main {
+    padding: 0.75rem;
+  }
+  
+  .call-page-center-column {
+    border-radius: 4px;
+  }
+}

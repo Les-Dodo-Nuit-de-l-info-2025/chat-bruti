@@ -1,0 +1,198 @@
+/* InputBar Styles - French Government Theme */
+
+.input-bar-container {
+  padding: 1rem 1.5rem;
+  border-top: 1px solid #e5e5e5;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background-color: #ffffff;
+  flex-shrink: 0;
+}
+
+/* Form */
+.input-bar-form {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Text Input */
+.input-bar-text-input {
+  flex: 1;
+  padding: 1rem 1.5rem;
+  border: 1px solid #e5e5e5;
+  border-radius: 4px;
+  font-size: 0.9375rem;
+  transition: border-color 0.2s ease;
+  font-family: 'Marianne', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+}
+
+.input-bar-text-input:focus {
+  outline: none;
+  border-color: #000091;
+  box-shadow: 0 0 0 3px rgba(0, 0, 145, 0.1);
+}
+
+.input-bar-text-input::placeholder {
+  color: #666666;
+}
+
+/* Voice Toggle */
+.input-bar-voice-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.input-bar-voice-button {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+}
+
+.input-bar-voice-button.recording {
+  background-color: #ef4444;
+  color: #ffffff;
+}
+
+.input-bar-voice-button.idle {
+  background-color: #f6f6f6;
+  color: #3a3a3a;
+  border: 1px solid #e5e5e5;
+}
+
+.input-bar-voice-button.idle:hover {
+  background-color: #e8edff;
+  border-color: #000091;
+}
+
+.input-bar-voice-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+/* Send Button */
+.input-bar-send-button {
+  padding: 0 2rem;
+  height: 3.5rem;
+  background: #000091;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  font-family: 'Marianne', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+}
+
+.input-bar-send-button:hover:not(:disabled) {
+  background: #1212ff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.input-bar-send-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.input-bar-send-icon {
+  width: 1rem;
+  height: 1rem;
+}
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+  .input-bar-container {
+    padding: 0.875rem 1.25rem;
+  }
+  
+  .input-bar-form {
+    gap: 0.875rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .input-bar-container {
+    padding: 0.75rem 1rem;
+    gap: 0.75rem;
+  }
+  
+  .input-bar-form {
+    gap: 0.75rem;
+  }
+  
+  .input-bar-text-input {
+    padding: 0.875rem 1.25rem;
+    font-size: 0.875rem;
+  }
+  
+  .input-bar-voice-button {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+  
+  .input-bar-voice-icon {
+    width: 1.375rem;
+    height: 1.375rem;
+  }
+  
+  .input-bar-send-button {
+    padding: 0 1.5rem;
+    height: 3rem;
+    font-size: 0.875rem;
+  }
+  
+  .input-bar-send-icon {
+    width: 0.875rem;
+    height: 0.875rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .input-bar-container {
+    padding: 0.625rem 0.75rem;
+  }
+  
+  .input-bar-form {
+    flex-wrap: wrap;
+  }
+  
+  .input-bar-text-input {
+    min-width: 100%;
+    padding: 0.75rem 1rem;
+    font-size: 0.8125rem;
+  }
+  
+  .input-bar-voice-button {
+    width: 3rem;
+    height: 3rem;
+  }
+  
+  .input-bar-voice-icon {
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+  
+  .input-bar-send-button {
+    flex: 1;
+    padding: 0 1.25rem;
+    height: 2.75rem;
+    font-size: 0.8125rem;
+    justify-content: center;
+  }
+}

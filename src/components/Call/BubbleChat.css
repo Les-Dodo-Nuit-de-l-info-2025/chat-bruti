@@ -1,0 +1,158 @@
+/* BubbleChat Styles - French Government Theme */
+
+.bubble-chat-container {
+  display: flex;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.bubble-chat-container.align-start {
+  justify-content: flex-start;
+}
+
+.bubble-chat-container.align-end {
+  justify-content: flex-end;
+}
+
+/* Bot Avatar */
+.bubble-chat-avatar {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  flex-shrink: 0;
+  object-fit: cover;
+  border: 2px solid #e5e5e5;
+}
+
+/* Message Content */
+.bubble-chat-content {
+  display: flex;
+  flex-direction: column;
+  max-width: 70%;
+}
+
+.bubble-chat-content.align-start {
+  align-items: flex-start;
+}
+
+.bubble-chat-content.align-end {
+  align-items: flex-end;
+}
+
+/* Message Bubble */
+.bubble-chat-message {
+  padding: 0.75rem 1rem;
+  transition: all 0.2s ease;
+  line-height: 1.6;
+  font-family: 'Marianne', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+}
+
+.bubble-chat-message.bot {
+  background: #f6f6f6;
+  border-radius: 4px;
+  border-top-left-radius: 0;
+  color: #3a3a3a;
+  border: 1px solid #e5e5e5;
+}
+
+.bubble-chat-message.user {
+  background-color: #000091;
+  color: #ffffff;
+  border-radius: 4px;
+  border-top-right-radius: 0;
+}
+
+/* Reactions */
+.bubble-chat-reactions {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+  animation: fadeIn 0.2s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.bubble-chat-reaction-button {
+  padding: 0.25rem 0.5rem;
+  background-color: #ffffff;
+  border: 1px solid #e5e5e5;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 0.875rem;
+  display: flex;
+  align-items: center;
+  font-family: 'Marianne', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+}
+
+.bubble-chat-reaction-button:hover {
+  background-color: #e8edff;
+  border-color: #000091;
+  transform: scale(1.05);
+}
+
+.bubble-chat-reaction-emoji {
+  margin-right: 0.25rem;
+}
+
+.bubble-chat-reaction-count {
+  color: #666666;
+  font-weight: 600;
+}
+
+/* Timestamp */
+.bubble-chat-timestamp {
+  color: #666666;
+  margin-top: 0.25rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  font-size: 0.875rem;
+  font-family: 'Marianne', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+}
+
+/* Responsive styles */
+@media (max-width: 640px) {
+  .bubble-chat-container {
+    gap: 0.5rem;
+  }
+  
+  .bubble-chat-avatar {
+    width: 2rem;
+    height: 2rem;
+  }
+  
+  .bubble-chat-content {
+    max-width: 80%;
+  }
+  
+  .bubble-chat-message {
+    padding: 0.625rem 0.875rem;
+    font-size: 0.9375rem;
+  }
+  
+  .bubble-chat-reactions {
+    gap: 0.375rem;
+  }
+  
+  .bubble-chat-reaction-button {
+    padding: 0.25rem 0.375rem;
+    font-size: 0.8125rem;
+  }
+  
+  .bubble-chat-timestamp {
+    font-size: 0.8125rem;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+  .bubble-chat-content {
+    max-width: 75%;
+  }
+}

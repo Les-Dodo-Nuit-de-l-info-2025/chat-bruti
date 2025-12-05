@@ -1,0 +1,264 @@
+/* CallWidget Styles - French Government Theme */
+
+.call-widget {
+  background: #ffffff;
+  border-radius: 4px;
+  padding: 2.5rem;
+  border: 1px solid #e5e5e5;
+  border-top: 3px solid #000091;
+  max-width: 28rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.call-widget-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.widget-header {
+  text-align: center;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 1.5rem;
+}
+
+.widget-title {
+  color: #000091;
+  margin-bottom: 0.75rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-family: 'Marianne', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+}
+
+.widget-subtitle {
+  color: #3a3a3a;
+  font-size: 0.9375rem;
+  font-family: 'Marianne', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+  line-height: 1.5;
+}
+
+.phone-icon-container {
+  width: 6rem;
+  height: 6rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1.5rem;
+  background: #000091;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.phone-icon {
+  width: 3rem;
+  height: 3rem;
+  color: #ffffff;
+  stroke-width: 2;
+}
+
+.call-widget-title {
+  color: #000091;
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-family: 'Marianne', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+}
+
+.call-widget-subtitle {
+  color: #3a3a3a;
+  font-size: 0.875rem;
+  font-family: 'Marianne', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+}
+
+.start-button {
+  width: 100%;
+  padding: 1rem 1.5rem;
+  background: #000091;
+  color: #ffffff;
+  border-radius: 4px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  font-size: 1rem;
+  font-family: 'Marianne', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+}
+
+.start-button:hover {
+  background: #1212ff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  transform: translateY(-1px);
+}
+
+.start-button:active {
+  transform: translateY(0);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+}
+
+.button-icon {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.start-call-button {
+  width: 100%;
+  padding: 1rem;
+  background: #000091;
+  color: #ffffff;
+  border-radius: 4px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-size: 1rem;
+  font-family: 'Marianne', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+}
+
+.start-call-button:hover {
+  background: #1212ff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.start-call-button-icon {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.calling-state {
+  text-align: center;
+  padding: 2rem;
+  background: #e8edff;
+  border-radius: 4px;
+  border: 1px solid #000091;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.calling-icon-wrapper {
+  animation: bounce 1s infinite;
+  margin-bottom: 1rem;
+}
+
+.calling-icon {
+  width: 3rem;
+  height: 3rem;
+  color: #000091;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.calling-text {
+  color: #000091;
+  font-size: 1.125rem;
+  font-weight: 600;
+  font-family: 'Marianne', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+}
+
+.calling-subtext {
+  color: #3a3a3a;
+  font-size: 0.875rem;
+  margin-top: 0.5rem;
+  font-family: 'Marianne', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+}
+
+.warning-section {
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+.warning-badge {
+  font-size: 0.75rem;
+  color: #3a3a3a;
+  background: #fff4e6;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  border: 1px solid #ffd6a5;
+  font-family: 'Marianne', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(-25%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: translateY(0);
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
+
+/* Responsive styles */
+@media (max-width: 640px) {
+  .call-widget {
+    padding: 1.5rem;
+    border-radius: 2px;
+  }
+  
+  .phone-icon-container {
+    width: 5rem;
+    height: 5rem;
+    margin-bottom: 1.25rem;
+  }
+  
+  .phone-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  
+  .widget-title,
+  .call-widget-title {
+    font-size: 1.25rem;
+  }
+  
+  .start-button,
+  .start-call-button {
+    padding: 0.875rem;
+    font-size: 0.8125rem;
+  }
+  
+  .calling-state {
+    padding: 1.5rem;
+  }
+  
+  .warning-badge {
+    font-size: 0.6875rem;
+    padding: 0.375rem 0.875rem;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+  .call-widget {
+    padding: 2rem;
+  }
+  
+  .phone-icon-container {
+    width: 5.5rem;
+    height: 5.5rem;
+  }
+}

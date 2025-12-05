@@ -1,0 +1,161 @@
+/* UserReview Styles - French Government Theme */
+
+.user-review {
+  background: #ffffff;
+  border-radius: 4px;
+  padding: 1.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease;
+  border: 1px solid #e5e5e5;
+  border-left: 3px solid #000091;
+}
+
+.user-review:hover {
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}
+
+/* Header */
+.review-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 0.75rem;
+}
+
+.review-user-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.review-user-name-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.25rem;
+}
+
+.review-user-name {
+  font-size: 0.875rem;
+  color: #000091;
+  font-weight: 600;
+  font-family: 'Marianne', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+}
+
+.review-verified-badge {
+  font-size: 0.6875rem;
+  background: #e8edff;
+  color: #000091;
+  padding: 0.125rem 0.5rem;
+  border-radius: 3px;
+  font-weight: 600;
+  font-family: 'Marianne', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+  border: 1px solid #000091;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+.review-rating-row {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.review-star {
+  width: 1rem;
+  height: 1rem;
+}
+
+.review-star.filled {
+  fill: #000091;
+  color: #000091;
+}
+
+.review-star.empty {
+  fill: #e5e5e5;
+  color: #e5e5e5;
+}
+
+.review-date {
+  font-size: 0.75rem;
+  color: #666666;
+  margin-left: 0.25rem;
+  font-family: 'Marianne', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+}
+
+/* Comment */
+.review-comment {
+  font-size: 0.875rem;
+  color: #3a3a3a;
+  line-height: 1.7;
+  font-style: italic;
+  font-family: 'Marianne', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+}
+
+/* Helpful Section */
+.review-footer {
+  margin-top: 1rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid #e5e5e5;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.75rem;
+  color: #666666;
+}
+
+.review-footer-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #000091;
+  transition: all 0.2s ease;
+  padding: 0;
+  font-size: 0.75rem;
+  font-family: 'Marianne', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+}
+
+.review-footer-button:hover {
+  color: #1212ff;
+  text-decoration: underline;
+}
+
+.review-footer-separator {
+  color: #e5e5e5;
+}
+
+/* Responsive styles */
+@media (max-width: 640px) {
+  .user-review {
+    padding: 1.25rem;
+    border-radius: 2px;
+  }
+  
+  .review-header {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .review-user-name {
+    font-size: 0.8125rem;
+  }
+  
+  .review-verified-badge {
+    font-size: 0.625rem;
+  }
+  
+  .review-comment {
+    font-size: 0.8125rem;
+  }
+  
+  .review-footer {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+  .user-review {
+    padding: 1.375rem;
+  }
+}
